@@ -1,0 +1,99 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+}
+.master-container {
+    width: 350px;
+    /* border: 1px solid #333; */
+    border-radius: 10px;
+    padding: 20px;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="email"], input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+    width: 100%;
+}
+input:focus, input:active {
+    border: 2px solid #000;
+    border-color: rgb(30, 99, 228);
+}
+.heading {
+    color: #2d2d2d;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+input[type="submit"], input[type="button"] {
+    border: 1px solid black;
+    min-width: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    background: rgb(30, 99, 228);
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    height: 42px;
+}
+.btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.google-btn-container {
+    background-color: transparent !important;
+    border: 1px solid rgb(30, 99, 228) !important;
+    color: rgb(30, 99, 228) !important;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.register-info {
+    margin-top: 70px;
+    font-size: smaller;
+    color: #2d2d2d;
+}
+a {
+    cursor: pointer;
+    color: rgb(30, 99, 228);
+    text-decoration: none;
+}
+.err {
+    display: none;
+    color: rgb(247, 66, 66);
+    margin-top: 10px;
+    text-align: center;
+}
+.success {
+    display: none;
+    color: rgb(69 193 69);
+    margin-top: 10px;
+}
